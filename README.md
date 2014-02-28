@@ -1,4 +1,0 @@
-Jekyll_Demo
-===========
-
-PagesDemo
