@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="./jquery-2.1.0.js"></script>
+</head>
+<body>
+	<div onclick="console.log('clicked me')">Click me</div>
+	<div id="myBtn" >Event Test</div>
+	<div id="eventListener">Event Listener</div>
+	<div id="testOnMethod">Test On Method</div>
+	<form method="post">
+		<input type="text" name="username" value=""/>
+		<input type="button" value= "Echo name" onclick="console.log(username.value)"/>
+	</form>
+</body>
+<script>
+	var myBtn = document.getElementById("myBtn");
+	myBtn.onclick=function(){
+		console.log("Event Test")
+	}
+
+	var eventListener=document.getElementById("eventListener");
+	eventListener.addEventListener("click",function(){
+		console.log("This is a listener !");
+	},false);
+
+	$("#testOnMethod").on("click",function(){
+		console.log("test on method");
+	})
+</script>
+</html>
+
+
