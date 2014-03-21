@@ -27,6 +27,12 @@
 	$("#testOnMethod").on("click",function(){
 		console.log("test on method");
 	})
+	$(document).ready(function(){
+		$(document).bind("contextmenu",function(){
+			console.log("contextmenu");
+			return false;
+		});
+	});
 </script>
 </html>
 
